@@ -5,6 +5,8 @@
     --clr-primary-100: hsl(257, 40%, 49%);
     --clr-primary-200: hsl(300, 69%, 71%);
 
+    --clr-neutral: hsl(255, 100%, 100%);
+
     /* typography */
     --ff-heading: 'Poppins', sans-serif;
     --ff-body: 'Open Sans', sans-serif;
@@ -20,4 +22,99 @@
     margin: 0;
     padding: 0;
     /* outline: 1px solid red; */
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-primary-100);
+}
+
+p {
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: var(--ff-heading);
+}
+
+.container {
+    width: min(80%, 80rem);
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.btn {
+    background-color: var(--clr-neutral);
+    padding: 0.7rem 4.5rem;
+    margin-inline: auto;
+    box-shadow: 0 0.5rem 1rem -0.75rem #000;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+}
+
+.btn:hover {
+    background-color: var(--clr-primary-200);
+    color: var(--clr-neutral);
+    transition: 200ms ease-in-out;
+    -webkit-transition: 200ms ease-in-out;
+    -moz-transition: 200ms ease-in-out;
+    -ms-transition: 200ms ease-in-out;
+    -o-transition: 200ms ease-in-out;
+}
+
+body {
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: var(--clr-primary-100);
+    color: var(--clr-neutral);
+    font-family: var(--ff-body);
+}
+
+header {
+    margin-block: 2rem;
+}
+
+#logo {
+    height: 2rem;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero__img {
+    margin-block: 4rem;
+}
+
+/* footer */
+
+.attribution {
+    margin-block: 1rem;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--clr-primary-200);
 }
